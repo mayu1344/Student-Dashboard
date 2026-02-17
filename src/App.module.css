@@ -1,0 +1,42 @@
+.appContainer {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--bg-primary);
+}
+
+.mainContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 280px;
+    /* Sidebar width */
+    height: 100vh;
+    position: relative;
+}
+
+.mainScroll {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Scrollbar polish */
+.mainScroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+.mainScroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.mainScroll::-webkit-scrollbar-thumb {
+    background-color: rgba(156, 163, 175, 0.5);
+    border-radius: 20px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
+
+.mainScroll::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(156, 163, 175, 0.8);
+}
